@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+// Funções para as portas lógicas
+int and_gate(int a, int b) {
+    return a && b;
+}
+
+int nand_gate(int a, int b) {
+    return !(a && b);
+}
+
+int or_gate(int a, int b) {
+    return a || b;
+}
+
+int nor_gate(int a, int b) {
+    return !(a || b);
+}
+
+int main() {
+    int escolha, entrada1, entrada2;
+
+    printf("Escolha uma porta lógica:\n");
+    printf("1. AND\n");
+    printf("2. NAND\n");
+    printf("3. OR\n");
+    printf("4. NOR\n");
+    scanf("%d", &escolha);
+
+    printf("Digite o valor da primeira entrada (0 ou 1): ");
+    scanf("%d", &entrada1);
+
+    printf("Digite o valor da segunda entrada (0 ou 1): ");
+    scanf("%d", &entrada2);
+
+    switch (escolha) {
+        case 1:
+            printf("Resultado da porta AND: %d\n", and_gate(entrada1, entrada2));
+            break;
+        case 2:
+            printf("Resultado da porta NAND: %d\n", nand_gate(entrada1, entrada2));
+            break;
+        case 3:
+            printf("Resultado da porta OR: %d\n", or_gate(entrada1, entrada2));
+            break;
+        case 4:
+            printf("Resultado da porta NOR: %d\n", nor_gate(entrada1, entrada2));
+            break;
+        default:
+            printf("Escolha inválida!\n");
+    }
+
+    return 0;
+}
