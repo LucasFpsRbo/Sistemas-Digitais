@@ -1,0 +1,46 @@
+Portas Lógicas
+construção dos microprocessadores(unidades internas)
+Construção dos circuitos dos computadores(decodificadores, mémoria, etc)
+
+Portas Logicas:
+Principais tipos de portas logicas:
+
+	2 entradas no minimo e 1 saída apenas
+	NOT = Só 1 entrada e 1 saída
+	2 entradas = 4 possibilidades
+AND um semicirculo junto a um retangulo, Operação da porta AND é uma multiplicação S = A X B.
+(Porta NAND É o Contrario S = (A + B)') 
+Porta OR é soma S = A + B.(Porta NOR é o contrario.)
+Porta NOT é um triangulo com uma bolinha e a saida. Formula S = /E
+
+	 
+       && --- AND --- NAND
+       || --- OR --- NOR
+        ! --- NOT 
+	  --- XOR --- XNOR
+
+Tabela Verdade: (Lado Direito Saída, Lado Esquerdo Entrada)
+
+		OR
+       -----------------------
+       | E1 | E2 |  S= E1+E2 |
+       |  1 |  1 |     1     |
+       |  1 |  0 |     1     |
+       |  0 |  1 |     1     |
+       |  0 |  0 |     0     |
+	
+		AND
+       -----------------------
+       | E1 | E2 |  S= E1*E2 |
+       |  1 |  1 |     1     |
+       |  1 |  0 |     0     |
+       |  0 |  1 |     0     |
+       |  0 |  0 |     0     |
+
+
+Disponibilizar as portas logicas( AND, NAND, OR, NOR ) 
+pra o usuario inserir assim como o valor das entradas( 1,0 ) e ele faz a conta e 
+da o resultado em tabela verdade. 
+(O usuario primeiro escolhe a Porta logica (necessitamos de colocar a tabela verdade de todas as portas logicas)
+Depois do usuario escolher a porta logica o progama pede o valor das 2 entradas e depois disso o progama
+confere a tabela verdade e da o resultado de acordo com a porta e as 2 entradas).
